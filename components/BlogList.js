@@ -25,7 +25,7 @@ const roboto = Roboto_Slab({
 })
 
 export async function blogListApi() {
-  let result = await fetch(process.env.BLOG_API)
+  let result = await fetch(`http://localhost:1337/api/blogs?populate=*`)
   result = await result.json();
   return result.data
 }

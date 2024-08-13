@@ -25,7 +25,7 @@ const roboto = Roboto_Slab({
 })
 
 async function serviceApi() {
-    let result = await fetch(process.env.API_FOR_SERVICE);
+    let result = await fetch(`http://localhost:1337/api/services?populate=*`);
     result = await result.json();
     return result.data;
 }
