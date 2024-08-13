@@ -8,15 +8,14 @@ export default function SearchBlog() {
     const [text, setText] = useState('')
     const [data, setData] = useState([])
 
-    const searchApi = async () => {
-        let url = `http://localhost:1337/api/blogs?filters[title][$contains]=${text}`
-        let result = await fetch(url);
-        result = await result.json();
-        setData(result.data)
-        console.log(url)
-    }
-// eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
+        const searchApi = async () => {
+            let url = `http://localhost:1337/api/blogs?filters[title][$contains]=${text}`
+            let result = await fetch(url);
+            result = await result.json();
+            setData(result.data)
+            console.log(url)
+        }
         searchApi()
     },[text])
 
