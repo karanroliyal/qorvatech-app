@@ -17,12 +17,6 @@ export default function page() {
                 <Services/>
 
             {/* My service dynamic component */}
-
-
-
-
-
-
         </div>
     )
 }

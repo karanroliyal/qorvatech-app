@@ -1,14 +1,9 @@
 import React from 'react'
 import { Poppins } from "next/font/google";
 import { Roboto_Slab } from "next/font/google";
-import Link from 'next/link';
 import about1 from '../../../public/about2-img.png'
 import { Col, Row, Container } from 'react-bootstrap';
 import Image from 'next/image';
-import Layer from "@/../public/layers.png"
-import Scholor from "@/../public/graduate.png"
-import Coffee from "@/../public/coffee-cup.png"
-import Handshake from "@/../public/handshake.png"
 import ReadMoreBtn from '../../../components/ReadMoreBtn'
 import AboutProjectDone from '../../../components/AboutProjectDone'
 import MyTopBanner from '@/../components/MyTopBanner'

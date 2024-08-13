@@ -13,13 +13,6 @@ export default function page() {
             {/* Blog Custom page component */}
                 <Blogpage />
             {/* Blog Custom page component */}
-
-
-
-
-
-
-
         </div>
     )
 }

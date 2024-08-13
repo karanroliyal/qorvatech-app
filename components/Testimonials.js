@@ -70,9 +70,9 @@ export default function Testimonials() {
                                                 <div className="testimonial-img-name">
                                                     <div>
                                                         {/* <Image src={`http://localhost:1337${item.attributes.client_image.data.attributes.url}`} width={100} height={100} alt="testimonial client" /> */}
-                                                        
 
-                                                        <Image src={clientProfile} width={100} height={100} alt="Client image"/>
+
+                                                        <Image src={clientProfile} width={100} height={100} alt="Client image" />
                                                     </div>
                                                     <div>
                                                         <h6 className={roboto.className}>{item.attributes.client_name}</h6>
@@ -89,60 +89,6 @@ export default function Testimonials() {
                                     </Carousel.Item>
                                 })
                             }
-
-                            {/* <Carousel.Item  className="Testimonial-Carousel-item">
-
-                                <Col>
-                                    <div className="my-feedback-card">
-                                        <div className="testimonial-img-name">
-                                            <div><Image src={Testimonial1} alt="testimonial client" /></div>
-                                            <div>
-                                                <h6 className={roboto.className}>Alex Google</h6>
-                                                <p className={poppins400.className}>Web Developer</p>
-                                            </div>
-                                        </div>
-                                        <div className="feedback-description">
-
-                                            <p className={poppins400.className}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, pariatur Lorem ipsum dolor sit amet consectetur.</p>
-                                        </div>
-                                    </div>
-                                </Col>
-
-                            </Carousel.Item>
-                            <Carousel.Item className="Testimonial-Carousel-item">
-                                <Col>
-                                    <div className="my-feedback-card">
-                                        <div className="testimonial-img-name">
-                                            <div><Image src={Testimonial2} alt="testimonial client" /></div>
-                                            <div>
-                                                <h6 className={roboto.className}>Tamara McGaney</h6>
-                                                <p className={poppins400.className}>Designer</p>
-                                            </div>
-                                        </div>
-                                        <div className="feedback-description">
-
-                                            <p className={poppins400.className}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, pariatur Lorem ipsum dolor sit amet consectetur.</p>
-                                        </div>
-                                    </div>
-                                </Col>
-                            </Carousel.Item>
-                            <Carousel.Item  className="Testimonial-Carousel-item" >
-                                <Col>
-                                    <div className="my-feedback-card">
-                                        <div className="testimonial-img-name">
-                                            <div><Image src={Testimonial2} alt="testimonial client" /></div>
-                                            <div>
-                                                <h6 className={roboto.className}>Tamara McGaney</h6>
-                                                <p className={poppins400.className}>Designer</p>
-                                            </div>
-                                        </div>
-                                        <div className="feedback-description">
-
-                                            <p className={poppins400.className}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, pariatur Lorem ipsum dolor sit amet consectetur.</p>
-                                        </div>
-                                    </div>
-                                </Col>
-                            </Carousel.Item> */}
                         </Carousel>
 
                     </Row>

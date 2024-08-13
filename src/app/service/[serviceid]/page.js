@@ -2,9 +2,6 @@ import React from 'react'
 import ReactMarkdown from "react-markdown";
 import MyTopBanner from '@/../components/MyTopBanner'
 import { Container } from 'react-bootstrap';
-import Services from '@/../components/Services'
-import Image from 'next/image';
-import digital from '@/../public/digital.jpg'
 
 async function singleServiceApi(id) {
     let result = await fetch(`http://localhost:1337/api/services/${id}?populate=*`);

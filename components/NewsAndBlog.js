@@ -37,13 +37,11 @@ export default async function NewsAndBlog() {
             {
                 blog.map((item) => {
                     return <div key={item.id} className='news-and-blog-container-card'>
-                        {/* <div className='flex-container-card'> */}
                             <Image src={`http://localhost:1337${item.attributes.image.data[0].attributes.formats.thumbnail.url}`} alt="blog 1" width={900} height={600} />
                             <div className='news-and-blog-text'>
                                 <h5 className={roboto.className}>{item.attributes.title.length<60?item.attributes.title:`${item.attributes.title.slice(0,60)}...`}</h5>
                                 <h6 className={poppins400.className}> <Link href={`blog/${item.id}`}> Read More </Link> </h6>
                             </div>
-                        {/* </div> */}
                     </div>
                 })
             }
