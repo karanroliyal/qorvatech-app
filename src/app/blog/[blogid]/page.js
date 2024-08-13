@@ -2,7 +2,7 @@
 import MyTopBanner from '@/../components/MyTopBanner'
 import BlogpageContent from '@/../components/BlogpageContent'
 
-const singleBlogApi=async(id)=>{
+const singleBlogApi = async (id) => {
     let result = await fetch(`http://localhost:1337/api/blogs/${id}?populate=*`);
     result = await result.json();
     return result.data
@@ -18,16 +18,9 @@ export default async function page({ params }) {
             {/* Top banner  */}
 
             {/* blog page content wrapper  */}
-            <BlogpageContent id={params.blogid}/>
+            <BlogpageContent id={params.blogid} />
             {/* blog page content wrapper  */}
 
         </div>
     )
 }
-export async function generateStaticParams() {
-    const posts = await fetch(`http://localhost:1337/api/blogs/${id}?populate=*`)
-    const blogContentApi = await singleBlogApi(params.blogid)
-    return blogContentApi.map(post => ({
-      blogid: post.blogid.toString(),
-    }))
-  }

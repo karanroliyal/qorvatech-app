@@ -18,7 +18,7 @@ export default function SearchBlog() {
 
     useEffect(() => {
         searchApi()
-    }, [text])
+    },[text])
 
     return (
         <div className='search-box-wrapper'>
@@ -28,20 +28,12 @@ export default function SearchBlog() {
                 {
                     text.length == 0 ? null : data.map((item) => {
                         return <div key={item.id}>
-                            {/* <p>{item.title}</p> */}
-                            {/* <p>karan</p> */}
                             <ListGroup>
                                 <ListGroup.Item><Link className='search-box-link' href={`blog/${item.id}`}>{item.attributes.title}</Link></ListGroup.Item>
-
                             </ListGroup>
                         </div>
                     })
                 }
-                {/* {
-                    text.length == 0 ? <ListGroup>
-                        <ListGroup.Item>No result found</ListGroup.Item>
-                    </ListGroup> : null
-                } */}
             </div>
         </div>
     )

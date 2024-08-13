@@ -37,23 +37,25 @@ const roboto = Roboto_Slab({
 
 // Api For Home page banner image 
 
-export async function homeBannerApi(){
-  let result = await fetch(`http://localhost:1337/api/home-page-banner?populate=*`)
-  result = await result.json();
-  return result.data.attributes.banner.data.attributes.formats.large.url;
-}
+// export async function homeBannerApi(){
+//   let result = await fetch(`http://localhost:1337/api/home-page-banner?populate=*`)
+//   result = await result.json();
+
+//   return result.data.attributes.banner.data.attributes.formats.large.url;
+// }
 
 // Api For Home page banner image 
 
 
 export default async function Home() {
 
-  const banner = await homeBannerApi()
-  console.log(banner)
+  // const banner = await homeBannerApi()
+  // console.log(banner)
+  // style={{backgroundImage:`url(http://localhost:1337${banner})`}}
   return (
     <>
       <div className="home-wrapper">
-        <div className="hero-section" style={{backgroundImage:`url(http://localhost:1337${banner})`}} id="particles-js" >
+        <div className="hero-section"  id="particles-js" >
           <p className={poppins400.className}>Endless Business Posiblittes</p>
           <h1 className={roboto.className}>Best <span>Solution</span> <br />And Great <span>Business</span></h1>
           <p className={poppins.className} id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecatibr vitae provident<br />  inventore eligendi maiores repellat dolore nihil eveniet totam sint?</p>
