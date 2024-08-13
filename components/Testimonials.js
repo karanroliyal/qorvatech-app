@@ -36,7 +36,7 @@ export default function Testimonials() {
     const [review, setReview] = useState([])
 
     const testimonialApi = async () => {
-        let result = await fetch(`http://localhost:1337/api/testimonials?populate=*`);
+        let result = await fetch(`http://127.0.0.1:1337/api/testimonials?populate=*`);
         result = await result.json();
         setReview(result.data)
     }
@@ -69,7 +69,7 @@ export default function Testimonials() {
                                             <div className="my-feedback-card">
                                                 <div className="testimonial-img-name">
                                                     <div>
-                                                        {/* <Image src={`http://localhost:1337${item.attributes.client_image.data.attributes.url}`} width={100} height={100} alt="testimonial client" /> */}
+                                                        {/* <Image src={`http://127.0.0.1:1337${item.attributes.client_image.data.attributes.url}`} width={100} height={100} alt="testimonial client" /> */}
 
 
                                                         <Image src={clientProfile} width={100} height={100} alt="Client image" />

@@ -33,7 +33,7 @@ export default function Projects() {
   const [categories, setCategories] = useState('')
 
   const projectApi = async () => {
-    let result = await fetch(`http://localhost:1337/api/projects?populate=*`);
+    let result = await fetch(`http://127.0.0.1:1337/api/projects?populate=*`);
     result = await result.json();
     setData(result.data)
   }
@@ -88,7 +88,7 @@ export default function Projects() {
                 flirt.map((item) => {
                   return <Col key={item.id}>
                     <div className="my-blog-card">
-                      <Image src={`http://localhost:1337${item.attributes.image.data.attributes.formats.thumbnail.url}`} alt="blog 1" width={350} height={250} />
+                      <Image src={`http://127.0.0.1:1337${item.attributes.image.data.attributes.formats.thumbnail.url}`} alt="blog 1" width={350} height={250} />
                       <h5>{item.attributes.categories}</h5>
                     </div>
                   </Col>

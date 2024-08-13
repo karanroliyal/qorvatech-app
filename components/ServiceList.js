@@ -14,7 +14,7 @@ export default function ServiceList() {
     const [container , setContainer] = useState([])
 
     async function dataApi() {
-        const url = "http://localhost:1337/api/services?populate=*"
+        const url = "http://127.0.0.1:1337/api/services?populate=*"
         let result = await fetch(url);
         result = await result.json();
         setContainer(result.data);

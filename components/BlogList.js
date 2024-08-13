@@ -25,7 +25,7 @@ const roboto = Roboto_Slab({
 })
 
 export async function blogListApi() {
-  let result = await fetch(`http://localhost:1337/api/blogs?populate=*`)
+  let result = await fetch(`http://127.0.0.1:1337/api/blogs?populate=*`)
   result = await result.json();
   return result.data
 }
@@ -46,7 +46,7 @@ export default async function BlogList() {
             <div className='blog-content-container' >
               <div className='blog-list-image-cover' >
 
-                <Image className='blog-list-image' src={`http://localhost:1337${item.attributes.image.data[0].attributes.formats.thumbnail.url}`} width={900} height={600} alt='blog-image' />
+                <Image className='blog-list-image' src={`http://127.0.0.1:1337${item.attributes.image.data[0].attributes.formats.thumbnail.url}`} width={900} height={600} alt='blog-image' />
               </div>
               <div className='blog-list-flex'>
                 <p id='published-at' className={poppins400.className}>Published at - <span className={roboto.className}>{item.attributes.date}</span></p>

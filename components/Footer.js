@@ -44,7 +44,7 @@ export default function Footer() {
     const noOfServices = 5
 
     const myServiceApi = async () => {
-        let result = await fetch(`http://localhost:1337/api/services?populate=*?pagination[page]=1&pagination[pageSize]=${noOfServices}`);
+        let result = await fetch(`http://127.0.0.1:1337/api/services?populate=*?pagination[page]=1&pagination[pageSize]=${noOfServices}`);
         result = await result.json()
         const data = result.data
         setService(data)

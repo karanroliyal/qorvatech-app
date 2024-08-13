@@ -25,7 +25,7 @@ const roboto = Roboto_Slab({
 })
 
 async function serviceApi() {
-    let result = await fetch(`http://localhost:1337/api/services?populate=*`);
+    let result = await fetch(`http://127.0.0.1:1337/api/services?populate=*`);
     result = await result.json();
     return result.data;
 }
@@ -48,7 +48,7 @@ export default async function Services() {
                                 return <Col  key={item.id} className='service-card-wrapper'>
                                 <div className='my-service-card'>
                                     <div className='service-image-cont'>
-                                        <Image src={`http://localhost:1337${item.attributes.service_img.data.attributes.formats.thumbnail.url}`} width={50} height={50} alt='Ui and Ux' />
+                                        <Image src={`http://127.0.0.1:1337${item.attributes.service_img.data.attributes.formats.thumbnail.url}`} width={50} height={50} alt='Ui and Ux' />
                                     </div>
                                 </div>
                                 <div className='service-details-flex'>

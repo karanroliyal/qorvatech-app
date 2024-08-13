@@ -23,7 +23,7 @@ const roboto = Roboto_Slab({
 })
 
 async function singleBlogApi(id){
-  let result = await fetch (`http://localhost:1337/api/blogs/${id}?populate=*`);
+  let result = await fetch (`http://127.0.0.1:1337/api/blogs/${id}?populate=*`);
   result = await result.json();
   result = [result.data]
   return result;
@@ -38,7 +38,7 @@ export default async function BlogContent({ id }) {
   return (
     <div className='blog-content-wrapper'>
       <div className='blog-s-image-container'>
-        <Image src={`http://localhost:1337${blogData[0].attributes.image.data[0].attributes.formats.thumbnail.url}`} width={900} height={600} alt='single-blog' />
+        <Image src={`http://127.0.0.1:1337${blogData[0].attributes.image.data[0].attributes.formats.thumbnail.url}`} width={900} height={600} alt='single-blog' />
       </div>
 
       <div>
