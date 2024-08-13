@@ -24,3 +24,10 @@ export default async function page({ params }) {
         </div>
     )
 }
+export async function generateStaticParams() {
+    const posts = await fetch(`http://localhost:1337/api/blogs/${id}?populate=*`)
+    const blogContentApi = await singleBlogApi(params.blogid)
+    return blogContentApi.map(post => ({
+      blogid: post.blogid.toString(),
+    }))
+  }

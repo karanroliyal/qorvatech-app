@@ -40,3 +40,10 @@ export default async function page({ params }) {
         </div>
     )
 }
+export async function generateStaticParams() {
+    const posts = await fetch(`http://localhost:1337/api/services/${id}?populate=*`)
+    const singleServiceData = await singleServiceApi(params.serviceid)
+    return singleServiceData.map(post => ({
+      serviceid: post.serviceid.toString(),
+    }))
+  }
