@@ -15,7 +15,7 @@ export default function SearchBlog() {
         setData(result.data)
         console.log(url)
     }
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         searchApi()
     },[text])
