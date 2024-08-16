@@ -27,11 +27,15 @@ const roboto = Roboto_Slab({
     display: 'swap'
 
 })
-
 export async function blogInfoApi() {
-    let result = await fetch(`http://127.0.0.1:1337/api/blogs`);
-    result = await result.json()
-    return result.data
+    try {
+        let result = await fetch(`http://127.0.0.1:1337/api/blogs`);
+        result = await result.json()
+        return result.data
+    }
+    catch (error) {
+        console.log("Facing this error", error)
+    }
 }
 
 
@@ -54,15 +58,15 @@ export default async function Blogpage() {
                             <h5>Search</h5>
                             <input type='text' className='Blog-Search-box' /><span className='span-search'>Search</span>
                         </div> */}
-                        <SearchBlog/>
+                        <SearchBlog />
                         <div className='Recent-blog-container'>
                             <h4 className={roboto.className}>Recent Posts</h4>
                             <div className='list-of-recent-blogs'>
-{
-                                blogInfo.map((item)=>{
-                                    return <div key={item.id}><Link href={`/blog/${item.id}`} className='Recent-Blog-Link' ><p className={poppins.className}>{item.attributes.title}</p></Link> </div>
-                                })
-}
+                                {
+                                    blogInfo.map((item) => {
+                                        return <div key={item.id}><Link href={`blog/${item.id}`} className='Recent-Blog-Link' ><p className={poppins.className}>{item.attributes.title}</p></Link> </div>
+                                    })
+                                }
                                 {/* <p className={poppins.className}>How Strategic IT Planning Can Drive Business Growth</p>
                                 <p className={poppins.className}>Easy Innovation Using Best Software Company</p>
                                 <p className={poppins.className}>A Quick Solutions For Daily Problem Solve</p>
