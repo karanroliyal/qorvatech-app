@@ -36,7 +36,7 @@ export default function Testimonials() {
     const [review, setReview] = useState([])
 
     const testimonialApi = async () => {
-        let result = await fetch(`http://127.0.0.1:1337/api/testimonials?populate=*`);
+        let result = await fetch(`https://reassuring-fish-5cf727fbdc.strapiapp.com/api/testimonials?populate=*`);
         result = await result.json();
         setReview(result.data)
     }

@@ -4,7 +4,7 @@ import MyTopBanner from '@/../components/MyTopBanner'
 import { Container } from 'react-bootstrap';
 
 async function singleServiceApi(id) {
-        let result = await fetch(`http://127.0.0.1:1337/api/services/${id}?populate=*`);
+        let result = await fetch(`https://reassuring-fish-5cf727fbdc.strapiapp.com/api/services/${id}?populate=*`);
         result = await result.json();
         result = [result.data];
         return result
