@@ -3,7 +3,6 @@ import { Container, Row, Button, Col } from "react-bootstrap";
 import { Poppins } from "next/font/google";
 import { Roboto_Slab } from "next/font/google";
 import Image from 'next/image';
-import ProjectApiCall from './ProjectApiCall'
 import { useEffect, useState } from "react";
 
 
@@ -33,9 +32,13 @@ export default function Projects() {
   const [categories, setCategories] = useState('')
 
   const projectApi = async () => {
-    let result = await fetch(`http://127.0.0.1:1337/api/projects?populate=*`);
-    result = await result.json();
-    setData(result.data)
+    try {
+      let result = await fetch(`http://127.0.0.1:1337/api/projects?populate=*`);
+      result = await result.json();
+      setData(result.data)
+    } catch (error) {
+      console.log("Getting this error : ",error)
+    }
   }
 
   useEffect(() => {

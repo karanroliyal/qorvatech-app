@@ -25,9 +25,13 @@ const roboto = Roboto_Slab({
 })
 
 export async function blogListApi() {
-  let result = await fetch(`http://127.0.0.1:1337/api/blogs?populate=*`)
-  result = await result.json();
-  return result.data
+  try {
+    let result = await fetch(`http://127.0.0.1:1337/api/blogs?populate=*`)
+    result = await result.json();
+    return result.data
+  } catch (error) {
+    console.log("Getting this error : ",error)
+  }
 }
 
 export default async function BlogList() {
