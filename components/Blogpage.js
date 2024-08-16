@@ -60,7 +60,7 @@ export default async function Blogpage() {
                             <div className='list-of-recent-blogs'>
 {
                                 blogInfo.map((item)=>{
-                                    return <div key={item.id}><Link href={`blog/${item.id}`} className='Recent-Blog-Link' ><p className={poppins.className}>{item.attributes.title}</p></Link> </div>
+                                    return <div key={item.id}><Link href={`/blog/${item.id}`} className='Recent-Blog-Link' ><p className={poppins.className}>{item.attributes.title}</p></Link> </div>
                                 })
 }
                                 {/* <p className={poppins.className}>How Strategic IT Planning Can Drive Business Growth</p>

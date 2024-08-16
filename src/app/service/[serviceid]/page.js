@@ -7,7 +7,6 @@ async function singleServiceApi(id) {
     let result = await fetch(`http://127.0.0.1:1337/api/services/${id}?populate=*`);
     result = await result.json();
     result = [result.data];
-    console.log(result)
     return result
 }
 
@@ -30,9 +29,6 @@ export default async function page({ params }) {
                 <ReactMarkdown className='react-markdown-service'>
                     {singleServiceData[0].attributes.heading}
                 </ReactMarkdown>
-
-
-
             </Container>
         </div>
     )
