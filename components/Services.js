@@ -25,13 +25,9 @@ const roboto = Roboto_Slab({
 })
 
 async function serviceApi() {
-    try {
         let result = await fetch(`http://127.0.0.1:1337/api/services?populate=*`);
         result = await result.json();
         return result.data;
-    } catch (error) {
-        console.log("Getting this error : ",error)
-    }
 }
 
 export default async function Services() {

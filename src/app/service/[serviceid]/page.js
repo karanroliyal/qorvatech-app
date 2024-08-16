@@ -4,14 +4,10 @@ import MyTopBanner from '@/../components/MyTopBanner'
 import { Container } from 'react-bootstrap';
 
 async function singleServiceApi(id) {
-    try {
         let result = await fetch(`http://127.0.0.1:1337/api/services/${id}?populate=*`);
         result = await result.json();
         result = [result.data];
         return result
-    } catch (error) {
-        console.log("Getting this error : ",error)
-    }
 }
 
 export default async function page({ params }) {

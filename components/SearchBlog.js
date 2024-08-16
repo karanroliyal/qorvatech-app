@@ -10,14 +10,10 @@ export default function SearchBlog() {
 
     useEffect(() => {
         const searchApi = async () => {
-            try {
                 let url = `http://127.0.0.1:1337/api/blogs?filters[title][$contains]=${text}`
                 let result = await fetch(url);
                 result = await result.json();
                 setData(result.data)
-            } catch (error) {
-                console.log("Getting this error : ",error)
-            }
         }
         searchApi()
     },[text])
