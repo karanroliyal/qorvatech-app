@@ -32,13 +32,9 @@ export default function Projects() {
   const [categories, setCategories] = useState('')
 
   const projectApi = async () => {
-    try {
       let result = await fetch(`http://127.0.0.1:1337/api/projects?populate=*`);
       result = await result.json();
       setData(result.data)
-    } catch (error) {
-      console.log("Getting this error : ",error)
-    }
   }
 
   useEffect(() => {

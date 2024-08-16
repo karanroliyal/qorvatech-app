@@ -28,14 +28,9 @@ const roboto = Roboto_Slab({
 
 })
 export async function blogInfoApi() {
-    try {
         let result = await fetch(`http://127.0.0.1:1337/api/blogs`);
         result = await result.json()
         return result.data
-    }
-    catch (error) {
-        console.log("Facing this error", error)
-    }
 }
 
 

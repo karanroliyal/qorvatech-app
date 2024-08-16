@@ -36,9 +36,9 @@ export default function Testimonials() {
     const [review, setReview] = useState([])
 
     const testimonialApi = async () => {
-            let result = await fetch(`http://127.0.0.1:1337/api/testimonials?populate=*`);
-            result = await result.json();
-            setReview(result.data)
+        let result = await fetch(`http://127.0.0.1:1337/api/testimonials?populate=*`);
+        result = await result.json();
+        setReview(result.data)
     }
 
     useEffect(() => {
