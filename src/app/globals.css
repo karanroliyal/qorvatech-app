@@ -1358,6 +1358,7 @@ h5 {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    line-height: 33px;
 }
 
 .react-markdown-service p,
@@ -1479,9 +1480,13 @@ li {
 
     .my-team-homesection .my-team-card-container-homepage {
         flex-direction: column;
-        margin: 0;
+
+        .my-team-image-contaoiner img {
+            width: 100%;
+        }
     }
-    .my-team-homesection .my-team-card-container-homepage .service-section-homepage .my-service-card-border {
+
+    .service-section-homepage .my-service-card-border {
         margin-bottom: 20px;
     }
 
@@ -1626,9 +1631,6 @@ li {
     }
     .contact-page-wrapper .Qorvatech-locations .my-loaction-card-padding .information-of-contact{
         padding: 10px;
-    }
-    .my-team-homesection .my-team-card .my-team-image-contaoiner img{
-        width: 100%;
     }
 }
 
