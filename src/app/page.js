@@ -86,7 +86,7 @@ export default async function Home() {
         {/* Solution service qorvatech  */}
 
         {/* My Team Component  */}
-        <MyTeam />
+        {/* <MyTeam /> */}
         {/* My Team Component  */}
 
         {/* My projects Component  */}
@@ -94,7 +94,7 @@ export default async function Home() {
         {/* My projects Component  */}
 
         {/* My Testimonial component  */}
-        {/* <Testimonials /> */}
+        <Testimonials />
         {/* My Testimonial component  */}
 
         <Container className="news-blog">
