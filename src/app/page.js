@@ -90,7 +90,7 @@ export default async function Home() {
         {/* My Team Component  */}
 
         {/* My projects Component  */}
-        <Projects />
+        {/* <Projects /> */}
         {/* My projects Component  */}
 
         {/* My Testimonial component  */}
