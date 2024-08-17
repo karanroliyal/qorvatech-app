@@ -1479,7 +1479,7 @@ li {
 
     .my-team-homesection .my-team-card-container-homepage {
         flex-direction: column;
-
+        margin: 0;
         .my-team-image-contaoiner img {
             width: 100%;
         }
