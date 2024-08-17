@@ -86,7 +86,7 @@ export default async function Home() {
         {/* Solution service qorvatech  */}
 
         {/* My Team Component  */}
-        {/* <MyTeam /> */}
+        <MyTeam />
         {/* My Team Component  */}
 
         {/* My projects Component  */}
