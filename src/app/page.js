@@ -90,14 +90,14 @@ export default async function Home() {
         {/* My Team Component  */}
 
         {/* My projects Component  */}
-        {/* <Projects /> */}
+        <Projects />
         {/* My projects Component  */}
 
         {/* My Testimonial component  */}
-        {/* <Testimonials /> */}
+        <Testimonials />
         {/* My Testimonial component  */}
 
-        {/* <Container className="news-blog">
+        <Container className="news-blog">
           <div className="my-text">
             <p className={poppins400.className}>What’s Happening</p>
             <h2 className={roboto.className}>Best News & Blog</h2>
@@ -105,7 +105,7 @@ export default async function Home() {
           <div className='news-and-blog-container'>
             <NewsAndBlog />
           </div>
-        </Container> */}
+        </Container>
 
 
 
