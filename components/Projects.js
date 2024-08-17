@@ -69,8 +69,6 @@ export default function Projects() {
               <h2 className={roboto.className}>Awasome Portfolio</h2>
               <div className="my-list-of-categories">
                 <ul className={roboto.className}>
-
-
                   <li><button style={{color:all}} onClick={() => {setCategories("")}}>All Work</button></li>
                   <li><button style={{color:cloud}} onClick={() => {setCategories("cloudService")}}>Cloud Service</button></li>
                   <li><button style={{color:net}} onClick={() => {setCategories("networking")}}>Networking</button></li>

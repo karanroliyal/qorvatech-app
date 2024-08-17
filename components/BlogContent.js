@@ -33,7 +33,6 @@ async function singleBlogApi(id){
 export default async function BlogContent({ id }) {
 
   const blogData = await singleBlogApi(id)
-  console.log("My blog Data = ",blogData)
 
   return (
     <div className='blog-content-wrapper'>

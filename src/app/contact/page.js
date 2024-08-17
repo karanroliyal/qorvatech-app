@@ -134,7 +134,7 @@ export default function page() {
                 <Row >
                     <Col className='my-loaction-card-padding'>
                         <div className='my-loaction-card-flex'>
-                            <Image src={indiaGate} alt='india' width={200} />
+                            <Image className='country-image'  src={indiaGate} alt='india' width={200} />
                             <div className='information-of-contact'>
                                 <Image className='flag-image' src={indiaFlag} width={30} alt='india-flag' />
                                 <div className='flex-info'>
@@ -154,8 +154,8 @@ export default function page() {
                         </div>
                     </Col>
                     <Col className='my-loaction-card-padding'>
-                        <div className='my-loaction-card-flex'>
-                            <Image src={usa} alt='india' width={200} />
+                        <div  className='my-loaction-card-flex'>
+                            <Image className='country-image'  src={usa} alt='india' width={200} />
                             <div className='information-of-contact'>
                                 <Image className='flag-image' src={usaFlag} width={30} alt='india-flag' />
                                 <div className='flex-info'>

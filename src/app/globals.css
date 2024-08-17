@@ -1,12 +1,15 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body,html{
+
+body,
+html {
     scroll-behavior: smooth
 }
 
@@ -16,12 +19,13 @@ body,html{
 
 body::-webkit-scrollbar {
     width: 0.4em;
-  }
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: #ff7426;
     outline: 1px solid rgb(255, 255, 255);
     color: #426cfb;
-  }
+}
 
 /* ScrollBar Css End  */
 
@@ -29,89 +33,108 @@ body::-webkit-scrollbar {
 
 /* Footer section css Start  */
 
-.footer-section-wrapper{
+.footer-section-wrapper {
     color: white;
 }
-.footer-section-wrapper .footer-section{
-    
+
+.footer-section-wrapper .footer-section {
+
     /* background-image: url('../../public/footer-bg\ \(1\).jpg'); */
     background-image: url(https://wp.urnoit.net/solute/wp-content/uploads/2023/01/footer-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 70px 0;
-    .Qorvatech-footer-logo-container{
+
+    .Qorvatech-footer-logo-container {
         margin-bottom: 50px;
     }
-    .Footer-email-container{
+
+    .Footer-email-container {
+
         /* display: flex;
         flex-direction: column; */
-        p{
-            font-size:large;
+        p {
+            font-size: large;
         }
-        a{
+
+        a {
             color: #ff7426;
             font-size: 150%;
             text-decoration: none;
         }
     }
-    .Footer-social-media-container{
+
+    .Footer-social-media-container {
         margin-top: 10px;
-        p{
-            font-size:large;
+
+        p {
+            font-size: large;
         }
     }
 }
-.footer-section-wrapper .Logo-image-container{
+
+.footer-section-wrapper .Logo-image-container {
     display: flex;
     gap: 20px;
-    .logo-image-cover{
+
+    .logo-image-cover {
         background-color: #ffffff;
         padding: 7px;
         border-radius: 50px;
     }
 }
-.footer-section-wrapper .Logo-image-container .logo-image-cover:hover{
+
+.footer-section-wrapper .Logo-image-container .logo-image-cover:hover {
     background-color: #000000;
 }
-.footer-section-wrapper .Footer-Qick-Links-container{
-    p{
+
+.footer-section-wrapper .Footer-Qick-Links-container {
+    p {
         font-size: larger;
     }
-    ul{
+
+    ul {
         padding: 0;
 
     }
-    ul li{
+
+    ul li {
         list-style: none;
         display: flex;
         line-height: 40px;
         gap: 10px;
         align-items: center;
-        a{
+
+        a {
             text-decoration: none;
             color: white;
         }
     }
 }
-.footer-section-wrapper .Footer-Qick-Links-container ul li a:hover{
+
+.footer-section-wrapper .Footer-Qick-Links-container ul li a:hover {
     color: #ff7426;
 }
-.footer-section-wrapper .Footer-Contact-container{
-    p{
+
+.footer-section-wrapper .Footer-Contact-container {
+    p {
         font-size: larger;
     }
-    
+
 }
-.Footer-flex-contact{
+
+.Footer-flex-contact {
     display: flex;
     gap: 10px;
-    a{
+
+    a {
         text-decoration: none;
         color: white;
     }
 }
-.Footer-flex-contact a:hover{
+
+.Footer-flex-contact a:hover {
     color: #ff7426;
 }
 
@@ -205,6 +228,158 @@ body::-webkit-scrollbar {
     background-size: cover;
 }
 
+/* custom switch button  */
+
+.checkbox-wrapper-55 input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+}
+
+.checkbox-wrapper-55 *,
+.checkbox-wrapper-55 ::after,
+.checkbox-wrapper-55 ::before {
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper-55 .rocker {
+    display: inline-block;
+    position: relative;
+    /*
+    SIZE OF SWITCH
+    ==============
+    All sizes are in em - therefore
+    changing the font-size here
+    will change the size of the switch.
+    See .rocker-small below as example.
+    */
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #888;
+    width: 7em;
+    height: 4em;
+    overflow: hidden;
+    border-bottom: 0.5em solid #eee;
+}
+
+.checkbox-wrapper-55 .rocker-small {
+    font-size: 0.75em;
+}
+
+.checkbox-wrapper-55 .rocker::before {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #999;
+    border: 0.5em solid #eee;
+    border-bottom: 0;
+}
+
+.checkbox-wrapper-55 .switch-left,
+.checkbox-wrapper-55 .switch-right {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5em;
+    width: 3em;
+    transition: 0.2s;
+    user-select: none;
+}
+
+.checkbox-wrapper-55 .switch-left {
+    height: 2.4em;
+    width: 2.75em;
+    left: 0.85em;
+    bottom: 0.4em;
+    background-color: #ddd;
+    transform: rotate(15deg) skewX(15deg);
+}
+
+.checkbox-wrapper-55 .switch-right {
+    right: 0.5em;
+    bottom: 0;
+    background-color: #bd5757;
+    color: #fff;
+}
+
+.checkbox-wrapper-55 .switch-left::before,
+.checkbox-wrapper-55 .switch-right::before {
+    content: "";
+    position: absolute;
+    width: 0.4em;
+    height: 2.45em;
+    bottom: -0.45em;
+    background-color: #ccc;
+    transform: skewY(-65deg);
+}
+
+.checkbox-wrapper-55 .switch-left::before {
+    left: -0.4em;
+}
+
+.checkbox-wrapper-55 .switch-right::before {
+    right: -0.375em;
+    background-color: transparent;
+    transform: skewY(65deg);
+}
+
+.checkbox-wrapper-55 input:checked+.switch-left {
+    background-color: #0084d0;
+    color: #fff;
+    bottom: 0px;
+    left: 0.5em;
+    height: 2.5em;
+    width: 3em;
+    transform: rotate(0deg) skewX(0deg);
+}
+
+.checkbox-wrapper-55 input:checked+.switch-left::before {
+    background-color: transparent;
+    width: 3.0833em;
+}
+
+.checkbox-wrapper-55 input:checked+.switch-left+.switch-right {
+    background-color: #ddd;
+    color: #888;
+    bottom: 0.4em;
+    right: 0.8em;
+    height: 2.4em;
+    width: 2.75em;
+    transform: rotate(-15deg) skewX(-15deg);
+}
+
+.checkbox-wrapper-55 input:checked+.switch-left+.switch-right::before {
+    background-color: #ccc;
+}
+
+/* Keyboard Users */
+.checkbox-wrapper-55 input:focus+.switch-left {
+    color: #333;
+}
+
+.checkbox-wrapper-55 input:checked:focus+.switch-left {
+    color: #fff;
+}
+
+.checkbox-wrapper-55 input:focus+.switch-left+.switch-right {
+    color: #fff;
+}
+
+.checkbox-wrapper-55 input:checked:focus+.switch-left+.switch-right {
+    color: #333;
+}
+
+
+
+/* custom switch button  */
+
+
 .service-section-homepage {
     padding: 100px 0;
 
@@ -228,19 +403,27 @@ body::-webkit-scrollbar {
 
 .service-section-homepage .my-service-card-border {
     padding: 30px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     background-color: white;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0 20px 0 0;
     display: flex;
     gap: 30px;
-    p{
+
+    p {
         color: grey;
     }
+
     h5 {
         color: #ff7426;
         font-weight: 500;
     }
 }
-.service-section-homepage .my-service-card-border #service-section-Link{
+
+.service-section-homepage .my-service-card-border:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.service-section-homepage .my-service-card-border #service-section-Link {
     color: #000000;
     text-decoration: none;
     display: flex;
@@ -280,10 +463,12 @@ body::-webkit-scrollbar {
 .my-team-homesection .my-team-card {
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    .my-team-image-contaoiner{
+
+    .my-team-image-contaoiner {
         width: 100%;
-        background-color: red;
-        img{
+        /* background-color: red; */
+
+        img {
             object-fit: cover;
             max-width: 100%;
             height: 100%;
@@ -327,7 +512,7 @@ body::-webkit-scrollbar {
     }
 }
 
-.portfoliyo-bg-image .portfoliyo-container-homepage .my-portfoliyo-categories{
+.portfoliyo-bg-image .portfoliyo-container-homepage .my-portfoliyo-categories {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -349,14 +534,17 @@ body::-webkit-scrollbar {
         }
     }
 }
-.portfoliyo-bg-image .portfoliyo-container-homepage .my-portfoliyo-categories .my-list-of-categories li button{
+
+.portfoliyo-bg-image .portfoliyo-container-homepage .my-portfoliyo-categories .my-list-of-categories li button {
     border: none;
     background-color: #f6f6f8;
     border-bottom: 1px solid black;
 }
-.portfoliyo-bg-image .portfoliyo-container-homepage .my-portfoliyo-categories .my-list-of-categories li button:hover{
+
+.portfoliyo-bg-image .portfoliyo-container-homepage .my-portfoliyo-categories .my-list-of-categories li button:hover {
     color: #ff7426;
 }
+
 .portfoliyo-bg-image .portfoliyo-container-homepage .my-cards-container {
     padding: 50px 0;
 }
@@ -419,10 +607,12 @@ body::-webkit-scrollbar {
 .my-feedback-section-homepage .my-feedback-card .feedback-description {
     padding: 20px 0 0 0;
 }
-.my-feedback-section-homepage .testimonial-padding .Testimonial-Carousel-item{
+
+.my-feedback-section-homepage .testimonial-padding .Testimonial-Carousel-item {
     background-color: white;
     padding: 40px 120px;
 }
+
 /* Home page css code end  */
 
 
@@ -709,10 +899,12 @@ body::-webkit-scrollbar {
         background-size: cover;
         background-color: #426cfb;
         color: white;
-        h2{
+
+        h2 {
             color: white;
         }
-        h5{
+
+        h5 {
             color: white;
         }
     }
@@ -857,17 +1049,21 @@ body::-webkit-scrollbar {
     padding: 80px 0;
 
 }
+
 .search-box-wrapper .search-box-container {
     padding: 50px;
     background-color: #eef1f4;
 }
-.search-box-wrapper  .search-box-link{
+
+.search-box-wrapper .search-box-link {
     color: black;
     text-decoration: none;
 }
-.search-box-wrapper  .search-box-link:hover{
+
+.search-box-wrapper .search-box-link:hover {
     color: #ff7426;
 }
+
 .Blog-page-wrapper .blog-page-container .Blog-Search-box {
     background-color: #FFF;
     border: none;
@@ -891,7 +1087,8 @@ body::-webkit-scrollbar {
         color: grey;
         margin-top: 30px;
     }
-    .Recent-Blog-Link{
+
+    .Recent-Blog-Link {
         text-decoration: none;
         color: grey;
     }
@@ -1011,10 +1208,12 @@ body::-webkit-scrollbar {
         color: #ff7426;
         text-decoration: none;
     }
-    .Heading-Link h3{
+
+    .Heading-Link h3 {
         color: #000000;
-    } 
-    .Heading-Link h3:hover{
+    }
+
+    .Heading-Link h3:hover {
         color: #ff7426;
     }
 }
@@ -1092,9 +1291,11 @@ body::-webkit-scrollbar {
         border-radius: 50px;
     }
 }
-.service-component-wrapper .service-card-container .service-card-wrapper:hover{
+
+.service-component-wrapper .service-card-container .service-card-wrapper:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .service-component-wrapper .service-card-container .service-card-wrapper .service-details-flex {
     display: flex;
     flex-direction: column;
@@ -1151,15 +1352,38 @@ body::-webkit-scrollbar {
 h2,
 h3,
 h4,
-h5{
+h5 {
     color: rgb(0, 0, 0);
-    font-family: "Roboto Slab , latin , swap ,serif";
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
     font-weight: 500;
+    font-style: normal;
+    line-height: 55px;
 }
 
-.react-markdown-service p {
+.react-markdown-service p,
+li {
     color: grey;
     line-height: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.react-markdown-service ul {
+    list-style: none;
+    padding: 0;
+}
+
+.react-markdown-service ol {
+    padding-left: 1rem;
+}
+
+.react-markdown-service ul li:before {
+    content: "✔️";
+    margin-right: 15px;
+    display: inline-block;
 }
 
 /* Single Service Page css End  */
@@ -1168,51 +1392,246 @@ h5{
 
 /* DropDown Menu css start  */
 
-.Drop-Down-Wapper .my-dropDown .dropDown-item a{
+.Drop-Down-Wapper .my-dropDown .dropDown-item a {
     text-decoration: none;
     color: #f83600;
 }
-.Drop-Down-Wapper .my-dropDown .dropDown-item a:hover{
+
+.Drop-Down-Wapper .my-dropDown .dropDown-item a:hover {
     color: #000000;
 }
+
 /* DropDown Menu css End  */
 
 /* Skeleton Body Blog css Start */
 
-.Skeleton-body-wrapper .Skeleton-body-Image-blog{
+.Skeleton-body-wrapper .Skeleton-body-Image-blog {
     width: 300px;
     height: 300px;
     animation: pulse 1.5s infinite ease-in-out;
     background-color: #c9c9c9;
 }
-.Skeleton-body-wrapper .Skeleton-body-Heading-blog{
+
+.Skeleton-body-wrapper .Skeleton-body-Heading-blog {
     width: 400px;
     height: 35px;
     animation: pulse 1.5s infinite ease-in-out;
     background-color: #c9c9c9;
 }
-.Skeleton-body-wrapper .Skeleton-body-Para-blog{
+
+.Skeleton-body-wrapper .Skeleton-body-Para-blog {
     width: 300px;
     height: 10px;
     animation: pulse 1.5s infinite ease-in-out;
     background-color: #c9c9c9;
 }
-.Skeleton-body-wrapper .Skeleton-body-date-blog{
+
+.Skeleton-body-wrapper .Skeleton-body-date-blog {
     width: 100px;
     height: 10px;
     animation: pulse 1.5s infinite ease-in-out;
     background-color: #c9c9c9;
 }
-@keyframes pulse{
-    0%{
+
+@keyframes pulse {
+    0% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 0.4;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
 /* Skeleton Body Blog css End */
+
+
+
+
+
+
+
+
+
+
+
+/* Resonsive css code Start  */
+
+@media only screen and (max-width: 600px) {
+    .home-wrapper .about-section img {
+        width: 100%;
+    }
+
+    .home-wrapper .about-section .col {
+        flex: none;
+    }
+
+    .portfoliyo-bg-image .portfoliyo-container-homepage .my-portfoliyo-categories {
+        flex-direction: column;
+    }
+
+    .my-team-homesection .my-team-card {
+        margin-bottom: 20px;
+    }
+
+    .my-team-homesection .my-team-card-container-homepage {
+        flex-direction: column;
+
+        .my-team-image-contaoiner img {
+            width: 100%;
+        }
+    }
+
+    .service-section-homepage .my-service-card-border {
+        margin-bottom: 20px;
+    }
+
+    .my-card-row:nth-child(3) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .my-card-row:nth-child(2) {
+        margin-bottom: 0;
+    }
+
+    .my-feedback-section-homepage .testimonial-padding .Testimonial-Carousel-item {
+        padding: 0;
+    }
+
+    .my-feedback-section-homepage .my-feedback-card .testimonial-img-name {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-feedback-section-homepage .my-feedback-card .feedback-description p {
+        text-align: center;
+    }
+
+    .news-and-blog-container .news-and-blog-container-card {
+        width: 100%;
+    }
+
+    .home-wrapper .hero-section {
+        h1 {
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 13px;
+            padding: 0 10px;
+        }
+    }
+
+    .home-wrapper .hero-section {
+        padding-top: 27%;
+        padding-bottom: 20%;
+    }
+
+    .qorvatech-about-page-wrapper .my-about-page-container .row {
+        flex-direction: column;
+        margin: 0;
+
+        .col img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    .home-wrapper .about-section .row {
+        flex-direction: column;
+        margin: 0;
+
+        .col img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    .portfoliyo-bg-image .portfoliyo-container-homepage .my-cards-container .row {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .portfoliyo-bg-image .portfoliyo-container-homepage .my-portfoliyo-categories .my-list-of-categories ul {
+        flex-wrap: wrap;
+    }
+
+    .portfoliyo-bg-image .portfoliyo-container-homepage .my-cards-container .my-blog-card img {
+        width: 100%;
+    }
+
+    .portfoliyo-bg-image .portfoliyo-container-homepage {
+        & .my-text {
+            h2 {
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .Blog-page-wrapper .blog-page-container .row{
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .blog-list-wrapper .blog-content-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .blog-list-wrapper .blog-content-container .blog-list-flex{
+        padding: 20px;
+    }
+    .service-component-wrapper .service-card-container .row{
+        flex-direction: column;
+        margin: 0 1px;
+    }
+    .service-component-wrapper .service-card-container .service-card-wrapper{
+        margin-bottom: 20px;
+    }
+    .contact-page-wrapper .my-contact-flex-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .contact-page-wrapper .my-contact-form .two-form-section{
+        flex-direction: column;
+        gap: 35px;
+    }
+    .contact-page-wrapper .Qorvatech-locations .my-loaction-card-padding .my-loaction-card-flex{
+        gap: 10px;
+        align-items: center;
+        padding: 20px;
+    }
+    .contact-page-wrapper .Qorvatech-locations .my-loaction-card-padding .my-loaction-card-flex .country-image{
+        width: 100%;
+        height: auto;
+    }
+    .contact-page-wrapper .my-contact-flex-container .contact-info{
+        margin: 0 5px;
+        border-radius: 30px;
+    }
+    .contact-page-wrapper .my-contact-flex-container .contact-form{
+        margin: 0 5px;
+        border-radius: 30px;
+    }
+    .contact-page-wrapper .Qorvatech-locations .my-text{
+        p{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    }
+    .contact-page-wrapper .Qorvatech-locations .my-loaction-card-padding .information-of-contact{
+        padding: 10px;
+    }
+}
+
+/* Resonsive css code End  */

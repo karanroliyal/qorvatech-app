@@ -113,7 +113,7 @@ export default function Footer() {
                                 <ul className={poppins.className}>
                                     {
                                         service.map((item) => {
-                                            return <li key={item.key}><Image src={Arrow} alt='arrow' width={10} /><Link href={'/'}>{item.attributes.service_title}</Link></li>
+                                            return <li key={item.key}><Image src={Arrow} alt='arrow' width={10} /><Link href={`service/${item.id}`}>{item.attributes.service_title}</Link></li>
                                         })
                                     }
                                 </ul>

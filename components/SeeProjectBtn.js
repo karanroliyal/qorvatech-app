@@ -5,9 +5,9 @@ export default function SeeProjectBtn() {
   return (
     <div className='my-see-project-btn'>
 
-      <button className='my-btn-1'>
+      <Link href={"/project"} className='my-btn-1'>
         See Project
-      </button>
+      </Link>
 
       <Link href={"/service"} className='my-btn-2'>
         Discover More
