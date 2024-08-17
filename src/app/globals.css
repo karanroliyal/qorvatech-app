@@ -1627,6 +1627,9 @@ li {
     .contact-page-wrapper .Qorvatech-locations .my-loaction-card-padding .information-of-contact{
         padding: 10px;
     }
+    .my-team-homesection .my-team-card .my-team-image-contaoiner img{
+        width: 100%;
+    }
 }
 
 /* Resonsive css code End  */
