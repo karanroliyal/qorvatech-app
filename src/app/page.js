@@ -52,7 +52,7 @@ export default async function Home() {
     <>
       <div className="home-wrapper">
         <div className="hero-section" id="particles-js" >
-          <p className={poppins400.className}>Endless Business Posiblittes</p>
+          <p className={poppins400.className}>Endless Karan Business Posiblittes</p>
           <h1 className={roboto.className}>Best <span>Solution</span> <br />And Great <span>Business</span></h1>
           <p className={poppins.className} id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecatibr vitae provident<br />  inventore eligendi maiores repellat dolore nihil eveniet totam sint?</p>
           <SeeProjectBtn />
