@@ -58,7 +58,7 @@ export default async function Home() {
           <SeeProjectBtn />
         </div>
 
-        <Container className="about-section">
+        {/* <Container className="about-section">
           <Row>
             <Col>
               <div>
@@ -78,7 +78,7 @@ export default async function Home() {
               </div>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
 
 
         {/* Solution service qorvatech  */}
