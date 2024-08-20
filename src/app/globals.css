@@ -579,7 +579,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .my-feedback-section-homepage .my-feedback-card {
-    padding: 20px;
+    padding: 50px 20px;
     border: 1px solid rgb(0 0 0 / 10%);
     background: #FFF;
 }
@@ -1480,6 +1480,7 @@ li {
     .my-team-homesection .my-team-card-container-homepage {
         flex-direction: column;
         margin: 0;
+
         .my-team-image-contaoiner img {
             width: 100%;
         }
@@ -1564,6 +1565,7 @@ li {
 
     .portfoliyo-bg-image .portfoliyo-container-homepage .my-cards-container .my-blog-card img {
         width: 100%;
+        padding: 0 10px;
     }
 
     .portfoliyo-bg-image .portfoliyo-container-homepage {
@@ -1571,71 +1573,98 @@ li {
             h2 {
                 text-align: center;
             }
-            p{
+
+            p {
                 text-align: center;
             }
         }
     }
-    .Blog-page-wrapper .blog-page-container .row{
+
+    .Blog-page-wrapper .blog-page-container .row {
         flex-direction: column;
         margin: 0;
         margin-bottom: 20px;
     }
-    .blog-list-wrapper .blog-content-container{
+
+    .blog-list-wrapper .blog-content-container {
         flex-direction: column;
         gap: 10px;
     }
-    .blog-list-wrapper .blog-content-container .blog-list-flex{
+
+    .blog-list-wrapper .blog-content-container .blog-list-flex {
         padding: 20px;
     }
-    .service-component-wrapper .service-card-container .row{
+
+    .service-component-wrapper .service-card-container .row {
         flex-direction: column;
         margin: 0 1px;
     }
-    .service-component-wrapper .service-card-container .service-card-wrapper{
+
+    .service-component-wrapper .service-card-container .service-card-wrapper {
         margin-bottom: 20px;
     }
-    .contact-page-wrapper .my-contact-flex-container{
+
+    .contact-page-wrapper .my-contact-flex-container {
         flex-direction: column;
         gap: 30px;
     }
-    .contact-page-wrapper .my-contact-form .two-form-section{
+
+    .contact-page-wrapper .my-contact-form .two-form-section {
         flex-direction: column;
         gap: 35px;
     }
-    .contact-page-wrapper .Qorvatech-locations .my-loaction-card-padding .my-loaction-card-flex{
+
+    .contact-page-wrapper .Qorvatech-locations .my-loaction-card-padding .my-loaction-card-flex {
         gap: 10px;
         align-items: center;
         padding: 20px;
     }
-    .contact-page-wrapper .Qorvatech-locations .my-loaction-card-padding .my-loaction-card-flex .country-image{
+
+    .contact-page-wrapper .Qorvatech-locations .my-loaction-card-padding .my-loaction-card-flex .country-image {
         width: 100%;
         height: auto;
     }
-    .contact-page-wrapper .my-contact-flex-container .contact-info{
+
+    .contact-page-wrapper .my-contact-flex-container .contact-info {
         margin: 0 5px;
         border-radius: 30px;
     }
-    .contact-page-wrapper .my-contact-flex-container .contact-form{
+
+    .contact-page-wrapper .my-contact-flex-container .contact-form {
         margin: 0 5px;
         border-radius: 30px;
     }
-    .contact-page-wrapper .Qorvatech-locations .my-text{
-        p{
+
+    .contact-page-wrapper .Qorvatech-locations .my-text {
+        p {
             text-align: center;
         }
-        h2{
+
+        h2 {
             text-align: center;
         }
     }
-    .contact-page-wrapper .Qorvatech-locations .my-loaction-card-padding .information-of-contact{
+
+    .contact-page-wrapper .Qorvatech-locations .my-loaction-card-padding .information-of-contact {
         padding: 10px;
     }
-    .my-feedback-section-homepage .testimonial-padding{
+
+    .my-feedback-section-homepage .testimonial-padding {
         margin: 0;
     }
-    .my-flex-hshbsdhsdjksd{
+
+    .my-flex-hshbsdhsdjksd {
         padding: 0 10px;
+    }
+
+    .my-feedback-section-homepage .my-feedback-card .testimonial-img-name {
+        p {
+            text-align: center
+        }
+
+        h6 {
+            text-align: center
+        }
     }
 }
 
