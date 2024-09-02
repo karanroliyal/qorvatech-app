@@ -68,7 +68,7 @@ export default async function Home() {
             <Col>
               <div className="about-company">
                 <p className={poppins400.className}>About Company</p>
-                <h2 className={roboto.className} >The Best Of Product Your Business karan</h2>
+                <h2 className={roboto.className} >The Best Of Product Your Business karan rawat</h2>
                 <p className={poppins400.className} id="grey-para">There are many variations of passages of lorem Ipsum available but the majority have suffered alteration in some form by inject rated humour or randomised this like.</p>
                 <div className="left-border">
                   <h5>Highest quality security, Network uptime, fast output. Unlimited scale and customizing possibilities.</h5>
