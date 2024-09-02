@@ -408,7 +408,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 0 20px 0 0;
     display: flex;
     gap: 30px;
-
+    transition: 1s;
     p {
         color: grey;
     }
@@ -416,6 +416,16 @@ body::-webkit-scrollbar-thumb {
     h5 {
         color: #ff7426;
         font-weight: 500;
+    }
+}
+.service-section-homepage .my-service-card-border:hover{
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    transition: 0.3s;
+    P{
+        color: #fff;
+    }
+    h5{
+        color: #000000;
     }
 }
 
@@ -722,6 +732,10 @@ body::-webkit-scrollbar-thumb {
 
 /* News and blog container css code Start */
 
+.home-wrapper #news-blog-wrapper{
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
 .news-and-blog-container {
     padding: 30px 0;
 }
@@ -737,7 +751,7 @@ body::-webkit-scrollbar-thumb {
     width: 30%;
 
     .news-and-blog-text {
-        /* background-color: antiquewhite; */
+        background-color: white;
         border-top: 1px solid #e6e6e6;
         padding: 30px;
         display: flex;
@@ -763,11 +777,17 @@ body::-webkit-scrollbar-thumb {
 
     }
 }
-
-.my-flex-hshbsdhsdjksd {
+.home-wrapper .news-and-blog-container-card:hover{
+    .news-and-blog-text{
+        background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    }
+}
+.home-wrapper .my-flex-hshbsdhsdjksd {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 0 10px;
+    justify-content: center;
 }
 
 /* News and blog container css code End */
@@ -1653,9 +1673,6 @@ li {
         margin: 0;
     }
 
-    .my-flex-hshbsdhsdjksd {
-        padding: 0 10px;
-    }
 
     .my-feedback-section-homepage .my-feedback-card .testimonial-img-name {
         p {

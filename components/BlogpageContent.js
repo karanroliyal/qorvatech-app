@@ -2,8 +2,9 @@ import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
 import { Poppins } from "next/font/google";
 import { Roboto_Slab } from "next/font/google";
-import BlogContent from './BlogContent' 
-import BlogList from './BlogList' 
+import BlogContent from './BlogContent'
+import BlogList from './BlogList'
+import SearchBlog from '@/../components/SearchBlog'
 
 
 const poppins = Poppins({
@@ -23,7 +24,7 @@ const roboto = Roboto_Slab({
 
 })
 
-export default function BlogpageConatent({id}) {
+export default function BlogpageConatent({ id }) {
     return (
 
         <div className='Blog-page-wrapper'>
@@ -31,14 +32,11 @@ export default function BlogpageConatent({id}) {
                 <Row>
                     <Col className='blog-section'>
 
-                        <BlogContent id={id}/>
+                        <BlogContent id={id} />
 
                     </Col>
                     <Col className='side-section'>
-                        <div className='search-box-container'>
-                            <h5>Search</h5>
-                            <input type='text' className='Blog-Search-box' /><span className='span-search'>Search</span>
-                        </div>
+                        <SearchBlog />
                         <div className='Recent-blog-container'>
                             <h4 className={roboto.className}>Recent Posts</h4>
                             <div className='list-of-recent-blogs'>

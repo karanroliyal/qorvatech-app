@@ -33,25 +33,25 @@ const roboto = Roboto_Slab({
 
 // Api For Home page banner image 
 
-// export async function homeBannerApi(){
-//   let result = await fetch(`http://localhost:1337/api/home-page-banner?populate=*`)
-//   result = await result.json();
+export async function homeBannerApi(){
+  let result = await fetch(`https://reassuring-fish-5cf727fbdc.strapiapp.com/api/home-page-banner?populate=*`)
+  result = await result.json();
 
-//   return result.data.attributes.banner.data.attributes.formats.large.url;
-// }
+  return result.data.attributes.banner.data.attributes.formats.large.url;
+}
 
 // Api For Home page banner image 
 
 
 export default async function Home() {
 
-  // const banner = await homeBannerApi()
+  const banner = await homeBannerApi()
   // console.log(banner)
   // style={{backgroundImage:`url(http://localhost:1337${banner})`}}
   return (
     <>
       <div className="home-wrapper">
-        <div className="hero-section" id="particles-js" >
+        <div className="hero-section" id="particles-js" style={{backgroundImage:`url(${banner})`}}  >
           <p className={poppins400.className}>Endless Karan Business Posiblittes</p>
           <h1 className={roboto.className}>Best <span>Solution</span> <br />And Great <span>Business</span></h1>
           <p className={poppins.className} id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecatibr vitae provident<br />  inventore eligendi maiores repellat dolore nihil eveniet totam sint?</p>
@@ -68,7 +68,7 @@ export default async function Home() {
             <Col>
               <div className="about-company">
                 <p className={poppins400.className}>About Company</p>
-                <h2 className={roboto.className} >The Best Of Product Your Business</h2>
+                <h2 className={roboto.className} >The Best Of Product Your Business karan</h2>
                 <p className={poppins400.className} id="grey-para">There are many variations of passages of lorem Ipsum available but the majority have suffered alteration in some form by inject rated humour or randomised this like.</p>
                 <div className="left-border">
                   <h5>Highest quality security, Network uptime, fast output. Unlimited scale and customizing possibilities.</h5>
@@ -97,6 +97,7 @@ export default async function Home() {
         <Testimonials />
         {/* My Testimonial component  */}
 
+<section id="news-blog-wrapper">
         <Container className="news-blog">
           <div className="my-text">
             <p className={poppins400.className}>What’s Happening</p>
@@ -106,7 +107,7 @@ export default async function Home() {
             <NewsAndBlog />
           </div>
         </Container>
-
+        </section>
 
 
       </div>

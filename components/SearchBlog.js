@@ -8,15 +8,18 @@ export default function SearchBlog() {
     const [text, setText] = useState('')
     const [data, setData] = useState([])
 
+
     useEffect(() => {
         const searchApi = async () => {
-                let url = `https://reassuring-fish-5cf727fbdc.strapiapp.com/api/blogs?filters[title][$contains]=${text}`
-                let result = await fetch(url);
-                result = await result.json();
-                setData(result.data)
+            const apiKey = process.env.REACT_APP_API_KEY
+            let url = `https://reassuring-fish-5cf727fbdc.strapiapp.com/api/blogs?filters[title][$contains]=${text}`
+            console.log("This is url = ", url)
+            let result = await fetch(url);
+            result = await result.json();
+            setData(result.data)
         }
         searchApi()
-    },[text])
+    }, [text])
 
     return (
         <div className='search-box-wrapper'>
@@ -27,7 +30,7 @@ export default function SearchBlog() {
                     text.length == 0 ? null : data.map((item) => {
                         return <div key={item.id}>
                             <ListGroup>
-                                <ListGroup.Item><Link className='search-box-link' href={`blog/${item.id}`}>{item.attributes.title}</Link></ListGroup.Item>
+                                <ListGroup.Item><Link className='search-box-link' href={`/blog/${item.id}`}>{item.attributes.title}</Link></ListGroup.Item>
                             </ListGroup>
                         </div>
                     })
